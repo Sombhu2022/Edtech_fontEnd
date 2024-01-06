@@ -3,11 +3,12 @@ import "./Home.scss";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../redux/slices/authSlice";
 function Home() {
-	const { user } = useSelector(selectUser);
+	const { user, isAuthenticated } = useSelector(selectUser);
+	console.log(isAuthenticated);
 	return (
 		<main>
 			<div id='home'>
-				{user ?<p>Welcome {user?.name}!</p> :""}
+				{isAuthenticated === false ? "" : <p>Welcome {user?.name}!</p>}
 			</div>
 		</main>
 	);

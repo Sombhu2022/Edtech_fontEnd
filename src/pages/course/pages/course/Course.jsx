@@ -16,10 +16,6 @@ function Course() {
 			<div className='course_container'>
 				<CourseContainer name='Python' />
 				<CourseContainer name='java' />
-				<CourseContainer name='javascript' />
-				<CourseContainer name='reactJS' />
-				<CourseContainer name='PHP' />
-				<CourseContainer name='NodeJS' />
 			</div>
 		</main>
 	);
